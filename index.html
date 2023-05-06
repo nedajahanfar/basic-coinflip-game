@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic coin flip game</title>
+</head>
+<body>
+    
+<script>
+   /* first we generate computers move using math.random() , we give it a 50% chance to be heads or tails.*/
+    const coinFlip = Math.random() < 0.5 ? "heads" : "tails";
+   /*then we get users response using prompt, if it was right(equal to coinFlip) we set the result to "you win"
+    otherwise we set it to you lose. */
+    const result = prompt("heads or tails?") === coinFlip ? "You Win!" : "You Lose!";
+     /*at the end we show the result using alert*/
+    alert(`The coinFlip was ${coinFlip} , ${result}.`);
+
+</script>
+
+</body>
+</html>
